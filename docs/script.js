@@ -5,7 +5,7 @@ window.onload = () => {
     const tab = document.getElementById('tab')
     const output = document.getElementById('output')
 
-    convert.addEventListener('click', () => {
+    csvToLatex = () => {
         let tabValue
         switch (tab.value) {
             case '2 spaces':
@@ -36,6 +36,8 @@ window.onload = () => {
 
         // write to output
         output.value = outputValue
-    })
+    }
 
+    convert.addEventListener('click', csvToLatex)
+    document.addEventListener('keydown', e => e.ctrlKey && e.key == 'Enter' ? csvToLatex() : null)
 }

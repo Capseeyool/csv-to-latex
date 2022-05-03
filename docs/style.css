@@ -1,16 +1,16 @@
 /* montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.title {
+* {
+    font-family: 'Montserrat', sans-serif
+}
+
+.header {
     width: 100%;
     text-align: center;
 }
 
-.title h1 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.row {
+.content {
     height: 800px;
     display: flex;
     justify-content: center;
@@ -34,9 +34,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .center button {
-    padding: 5px 10px;
+    padding: 10px 20px;
+}
+
+#convert, #tab {
+    margin: 5px;
+}
+
+.footer {
+    padding: 25px;
+    display: flex;
+    justify-content: end;
 }
