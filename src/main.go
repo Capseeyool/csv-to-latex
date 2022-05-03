@@ -29,9 +29,10 @@ func main() {
 
 	// write contents
 	for _, i := range content {
-		output += "\t\\hline\n\t"
+		output += "\t\\hline\n"
 		for index, j := range i {
 			if index == 0 {
+				output += "\t"
 				output += j
 			} else {
 				output += " & " + j
