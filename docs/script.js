@@ -1,6 +1,7 @@
 window.onload = () => {
     // elements
     const input = document.getElementById('input')
+    const auto = document.getElementById('auto')
     const convert = document.getElementById('convert')
     const tab = document.getElementById('tab')
     const output = document.getElementById('output')
@@ -39,5 +40,6 @@ window.onload = () => {
     }
 
     document.addEventListener('keydown', e => e.ctrlKey && e.key == 'Enter' ? csvToLatex() : null)
+    input.addEventListener('change', () => auto.checked ? csvToLatex() : null)
     convert.addEventListener('click', csvToLatex)
 }
