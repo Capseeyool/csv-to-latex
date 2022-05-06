@@ -38,6 +38,6 @@ window.onload = () => {
         output.value = outputValue
     }
 
-    convert.addEventListener('click', csvToLatex)
     document.addEventListener('keydown', e => e.ctrlKey && e.key == 'Enter' ? csvToLatex() : null)
+    convert.addEventListener('click', csvToLatex)
 }
